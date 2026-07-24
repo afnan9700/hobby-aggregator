@@ -1,0 +1,39 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: hobby-aggregator-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hobby_aggregator
+    username: hobby
+    password: hobby
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/hobby-aggregator
+
+app:
+  keycloak-admin:
+    base-url: http://localhost:8081
+    admin-realm: master
+    target-realm: hobby-aggregator
+    client-id: hobby-aggregator-admin
+    client-secret: ${KEYCLOAK_ADMIN_CLIENT_SECRET:change-me}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
