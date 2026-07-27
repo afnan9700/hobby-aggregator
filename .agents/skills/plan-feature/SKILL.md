@@ -3,7 +3,6 @@ name: "plan-feature"
 description: "Generate a step-by-step implementation plan from a spec"
 metadata:
   version: "1.0.0"
-  author: "your-name"
 ---
 
 # Plan Feature Skill

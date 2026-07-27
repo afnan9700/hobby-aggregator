@@ -3,13 +3,9 @@ name: "small-change"
 description: "Handle tiny fixes without the full spec-plan-design flow"
 metadata:
   version: "1.0.0"
-  author: "your-name"
 ---
 
 # Small Change Skill
-
-## When to Use
-Use this for bug fixes, narrow behavior changes, copy edits, and other small adjustments that do not justify a full feature workflow.
 
 ## Input
 - A short change request

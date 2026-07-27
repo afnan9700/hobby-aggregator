@@ -3,7 +3,6 @@ name: "finalize-feature"
 description: "Update design docs, app-state, and session-log after implementation"
 metadata:
   version: "1.0.0"
-  author: "your-name"
 ---
 
 # Finalize Feature Skill

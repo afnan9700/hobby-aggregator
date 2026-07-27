@@ -3,7 +3,6 @@ name: "implement-plan"
 description: "Execute one or more steps from an implementation plan"
 metadata:
   version: "1.0.0"
-  author: "your-name"
 ---
 
 # Implement Plan Skill
@@ -32,6 +31,7 @@ Use this when a plan is approved and you need to execute it step by step.
 ## Rules
 - Stay within the plan unless a necessary adjustment is discovered.
 - If the plan is incomplete, note the gap rather than silently expanding scope.
+- If a command fails because of sandbox, permission, or environment limits, do not retry in a loop. Stop, explain the blocker briefly, and ask the user how to proceed.
 - Verify before proceeding to the next step.
 
 ## Output

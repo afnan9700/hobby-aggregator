@@ -6,34 +6,17 @@ spring:
     name: hobby-aggregator-backend
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/hobby_aggregator
-    username: hobby
-    password: hobby
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/hobbyaggregator}
+    username: ${SPRING_DATASOURCE_USERNAME:hobbyuser}
+    password: ${SPRING_DATASOURCE_PASSWORD:hobbysecret}
+    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
-      ddl-auto: update
-    open-in-view: false
+      ddl-auto: ${SPRING_JPA_HIBERNATE_DDL_AUTO:validate}
+    show-sql: ${SPRING_JPA_SHOW_SQL:false}
     properties:
       hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
-
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:8081/realms/hobby-aggregator
-
-app:
-  keycloak-admin:
-    base-url: http://localhost:8081
-    admin-realm: master
-    target-realm: hobby-aggregator
-    client-id: hobby-aggregator-admin
-    client-secret: ${KEYCLOAK_ADMIN_CLIENT_SECRET:change-me}
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
+    open-in-view: false

@@ -1,5 +1,8 @@
 HELP.md
 target/
+
+# Environment files
+.env
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
