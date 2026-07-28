@@ -21,8 +21,6 @@
 - [Detailed implementation description for each file]
 **Verification**:
 - [ ] [Typecheck / tests / manual check]
-**Rollback**:
-- `git checkout -- [path]`
 
 ### Step 2: [Name]
 **Goal**: [What this step accomplishes]
@@ -34,14 +32,3 @@
 - [Detailed implementation description for each file]
 **Verification**:
 - [ ] [Typecheck / tests / manual check]
-**Rollback**:
-- `git checkout -- [path]`
-
-## Testing
-- Unit tests:
-- Integration tests:
-- Manual checks:
-
-## Overall Rollback Plan
-1. [Rollback step]
-2. [Rollback step]

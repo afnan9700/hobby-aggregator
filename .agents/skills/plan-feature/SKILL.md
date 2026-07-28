@@ -18,8 +18,7 @@ Use this after a spec is approved and you need a practical implementation plan.
 2. `apps/<app>/app-state.md`
 3. Relevant app-level `AGENTS.md` files
 4. Relevant convention docs in `.agents/docs/conventions/`
-5. Related feature specs and design docs when the feature depends on them
-6. Codebase files as needed to identify the correct files and boundaries
+5. Codebase files named in `spec.md`.
 7. Plan template in `.agents/_templates/_feature-templates/plan.md`
 
 ## Process
@@ -33,7 +32,11 @@ Use this after a spec is approved and you need a practical implementation plan.
 
 ## Rules
 - Keep steps atomic.
-- Be explicit about exact files and boundaries.
+- Split tests into their own step.
+- Prefer to write a few tests that cover the most important cases rather than many tests that cover every edge case.
+- Prefer integration tests over unit tests unless the unit tests are critical to the feature.
+- Trust the spec and do not explore the codebase beyonf the files mentioned in the spec.
+- Explore the codebase further only if the files from spec really do not provide enough information.
 - Do not rely on memory for code locations when a quick lookup is needed.
 - Split oversized features before implementation if the plan becomes too large.
 

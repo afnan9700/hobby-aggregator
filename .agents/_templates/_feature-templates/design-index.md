@@ -16,13 +16,5 @@
 ## Dependencies
 - This feature depends on: [features / modules]
 
-## Testing Summary
-| Test File | Type | Coverage |
-|-----------|------|----------|
-| `[file]` | [type] | [what it covers] |
-
-## Known Limitations
-- [Limitation]
-
 ## Notes
 - [Anything important for future work]

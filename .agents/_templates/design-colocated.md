@@ -14,8 +14,5 @@
 ## Dependencies
 - [What this module depends on]
 
-## Decisions
-- [Decision and rationale]
-
 ## Notes
 - [Anything important for future work]

@@ -46,3 +46,6 @@
 
 ## Files to Read
 - [Relevant code files for context]
+
+## Files to Read only if Needed
+- [Files that may be useful but not required]
