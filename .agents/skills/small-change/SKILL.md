@@ -1,9 +1,8 @@
 ---
-name: "small-change"
-description: "Handle tiny fixes without the full spec-plan-design flow"
+name: small-change
+description: Handle tiny fixes without the full spec-plan-design flow
 metadata:
-  version: "1.0.0"
-  author: "your-name"
+  version: 1.0.0
 ---
 
 # Small Change Skill
@@ -16,11 +15,9 @@ Use this for bug fixes, narrow behavior changes, copy edits, and other small adj
 - The affected file or files, if known
 
 ## Context to Load
-1. `AGENTS.md`
-2. Relevant app-level `AGENTS.md` files
-3. Relevant convention docs in `.agents/docs/conventions/`
-4. The directly affected code files
-5. Related tests or nearby code only if needed to understand the change
+1. Relevant convention docs in `.agents/docs/conventions/`
+2. The directly affected code files
+3. Related tests or nearby code only if needed to understand the change
 
 ## Process
 1. Confirm the change is small enough to stay within this fast path.

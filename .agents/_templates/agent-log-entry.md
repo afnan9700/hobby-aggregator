@@ -5,8 +5,5 @@ This file is an audit trail for the project owner. Append entries after meaningf
 ## [DATE] [TIME]
 **Task**: [What was worked on]
 
-**Decisions made**:
-- [Decision and rationale]
-
 **Issues**:
 - [None / describe]

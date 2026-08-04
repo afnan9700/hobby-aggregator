@@ -1,9 +1,8 @@
 ---
-name: "create-spec"
-description: "Generate a feature specification from a high-level idea"
+name: create-spec
+description: Generate a feature specification from a high-level idea
 metadata:
-  version: "1.0.0"
-  author: "your-name"
+  version: 1.0.0
 ---
 
 # Create Spec Skill

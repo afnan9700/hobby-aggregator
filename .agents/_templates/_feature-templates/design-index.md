@@ -1,7 +1,7 @@
 # Design: [Feature Name]
 
 ## Overview
-[One-paragraph description of the feature after implementation.]
+[Description of the feature after implementation.]
 
 ## Key Decisions
 | Decision | Rationale |
@@ -12,9 +12,6 @@
 | Module / Submodule | Location | Design Doc |
 |--------------------|----------|------------|
 | [Name] | `[path]` | `[DESIGN.md or design.md]` |
-
-## Dependencies
-- This feature depends on: [features / modules]
 
 ## Notes
 - [Anything important for future work]

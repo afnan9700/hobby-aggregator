@@ -6,9 +6,9 @@ Last updated: [DATE]
 [What this app is and how the major parts interact and fit together.]
 
 ## Feature Overview
-| Feature | Status | Spec |
-|---------|--------|------|
-| `[feature-name]` | Planned / In Progress / Done | `apps/<app>/features/NNN-feature-name/spec.md` |
+| Feature | Status |
+|---------|--------|
+| `[feature-name]` | Planned / In Progress / Done | 
 
 ## Technical Debt / Open Questions
 - [Debt or unresolved question]

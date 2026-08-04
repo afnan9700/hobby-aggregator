@@ -1,8 +1,8 @@
 ---
-name: "plan-feature"
-description: "Generate a step-by-step implementation plan from a spec"
+name: plan-feature
+description: Generate a step-by-step implementation plan from a spec
 metadata:
-  version: "1.0.0"
+  version: 1.0.0
 ---
 
 # Plan Feature Skill
@@ -15,30 +15,27 @@ Use this after a spec is approved and you need a practical implementation plan.
 
 ## Context to Load
 1. `apps/<app>/features/NNN-feature-name/spec.md`
-2. `apps/<app>/app-state.md`
-3. Relevant app-level `AGENTS.md` files
-4. Relevant convention docs in `.agents/docs/conventions/`
-5. Codebase files named in `spec.md`.
-7. Plan template in `.agents/_templates/_feature-templates/plan.md`
+2. Relevant convention docs in `.agents/docs/conventions/`
+3. `app-state.md` to understand the current project state.
+4. Files named in `spec.md`.
+5. Plan template in `.agents/_templates/_feature-templates/plan.md`
 
-## Process
-1. Read the spec and the current project state.
-2. Inspect the relevant codebase area enough to locate the affected files.
-3. Group work into small, verifiable steps.
-4. For each step, identify files to create or modify, implementation details, and verification. 
-5. Include test work as explicit steps or a dedicated testing section.
-6. Identify any places where implementation risk is high or dependencies are unclear.
-7. Present the plan in the format specified in `.agents/_templates/_feature-templates/plan.md` for human review. The plan should have enough details that referring to spec again is not required. 
+### Process
+1. Read the spec and identify the files it references.
+2. Inspect only those files. Explore additional code only if the referenced files do not provide enough information to produce an implementation plan.
+3. Break the feature into small, independently verifiable implementation steps. Split oversized features into smaller phases before planning if needed.
+4. For each implementation step, specify:
+   * files to create or modify,
+   * implementation details,
+   * verification criteria (optional),
+5. Add a dedicated testing step, prioritizing a small set of high-value integration tests. Include unit tests only where they provide unique value.
+6. Identify implementation risks, assumptions, open questions, or external dependencies.
+7. Present the final plan using the format defined in `.agents/_templates/_feature-templates/plan.md`. The plan should be self-contained and detailed enough that the spec is not needed during implementation.
 
-## Rules
-- Keep steps atomic.
-- Split tests into their own step.
-- Prefer to write a few tests that cover the most important cases rather than many tests that cover every edge case.
-- Prefer integration tests over unit tests unless the unit tests are critical to the feature.
-- Trust the spec and do not explore the codebase beyonf the files mentioned in the spec.
-- Explore the codebase further only if the files from spec really do not provide enough information.
-- Do not rely on memory for code locations when a quick lookup is needed.
-- Split oversized features before implementation if the plan becomes too large.
+### Rules
+* Keep each implementation step atomic.
+* Prefer high-value integration tests over exhaustive or low-value unit tests.
+* Do not inspect unrelated parts of the codebase unless required to complete the plan.
 
 ## Output
 - `apps/<app>/features/NNN-feature-name/plan.md`

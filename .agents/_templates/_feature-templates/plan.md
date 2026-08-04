@@ -18,9 +18,7 @@
 **Files to modify**:
 - `[path]`
 **Implementation notes**:
-- [Detailed implementation description for each file]
-**Verification**:
-- [ ] [Typecheck / tests / manual check]
+- [Detailed notes describing each file. Important functions, classes, their behavior etc. to be implemented]
 
 ### Step 2: [Name]
 **Goal**: [What this step accomplishes]
@@ -29,6 +27,4 @@
 **Files to modify**:
 - `[path]`
 **Implementation notes**:
-- [Detailed implementation description for each file]
-**Verification**:
-- [ ] [Typecheck / tests / manual check]
+- [Detailed notes describing each file. Important functions, classes, their behavior etc. to be implemented]

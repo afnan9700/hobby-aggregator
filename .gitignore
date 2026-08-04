@@ -5,3 +5,4 @@
 
 # Environment files
 .env
+.aider*

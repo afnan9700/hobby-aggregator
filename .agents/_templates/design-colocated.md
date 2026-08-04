@@ -8,11 +8,8 @@
 - [Responsibility 2]
 
 ## Public Interface
-- [Important functions, classes, routes, components, etc.]
-- [Include a short description if the class or function is complex]
-
-## Dependencies
-- [What this module depends on]
+- [Important files, functions, classes, routes, components, etc.]
+- [A description if the class or function is complex]
 
 ## Notes
 - [Anything important for future work]
